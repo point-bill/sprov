@@ -1,6 +1,8 @@
 # sprov-ui
  一个支持多协议多用户的v2ray Web面板
  
+ 备份自用工程
+ 
 # 详细教程
 https://blog.sprov.xyz/2019/02/09/sprov-ui/
  
@@ -40,16 +42,14 @@ https://blog.sprov.xyz/2019/02/09/sprov-ui/
 
 # 一键安装&升级面板
 
->以下两条命令皆可，两者是一样的，只需要运行一个，如果其中一个有错误，可以运行另外一个。
-
 >请务必使用 root 用户运行！
-```
-wget -O /usr/bin/sprov-ui -N --no-check-certificate https://blog.sprov.xyz/sprov-ui.sh && chmod +x /usr/bin/sprov-ui && sprov-ui
 
 ```
+wget -O /usr/bin/sprov-ui -N --no-check-certificate https://github.com/point-bill/sprov/raw/master/sprov-ui.sh && chmod +x /usr/bin/sprov-ui && sprov-ui
 ```
-wget -O /usr/bin/sprov-ui -N --no-check-certificate https://github.com/sprov065/sprov-ui/raw/master/sprov-ui.sh && chmod +x /usr/bin/sprov-ui && sprov-ui
 
+```
+bash <(curl -L -s https://raw.githubusercontent.com/point-bill/sprov/master/install.sh) | tee v2ray_ins.log && sprov-ui
 ```
 
 # Telegram 群组
